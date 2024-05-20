@@ -122,7 +122,7 @@ class TicTacToeBoard(tk.Tk):
         display_frame.pack(fill=tk.X)
         self.display = tk.Label(
             master=display_frame,
-            text="Ready?",
+            text='Ready? Player "X" starts!',
             font=font.Font(size=28, weight="bold"),
         )
         self.display.pack()
@@ -140,9 +140,9 @@ class TicTacToeBoard(tk.Tk):
                     text="",
                     font=font.Font(size=36, weight="bold"),
                     fg="black",
-                    width=4,
+                    width=5,
                     height=2,
-                    highlightbackground="lightblue",
+                    highlightbackground="lightblue"
                 )
                 self._cells[button] = (row, col)
                 button.bind("<ButtonPress-1>", self.play)
@@ -181,7 +181,8 @@ class TicTacToeBoard(tk.Tk):
             else:
                 self._game.toggle_player()
                 msg = f"{self._game.current_player.label}'s turn"
-                self._update_display(msg)
+                color = self._game.current_player.color
+                self._update_display(msg, color)
 
     # Create menu to allow play again and exit
     def _create_menu(self):
@@ -201,6 +202,7 @@ class TicTacToeBoard(tk.Tk):
         for button, coordinates in self._cells.items():
             if coordinates in self._game.winner_combo:
                 button.config(highlightbackground="green")
+                button.config(bg="PaleGreen1")
 
     def reset_board(self):
         # Reset the game's board to play again
@@ -208,6 +210,7 @@ class TicTacToeBoard(tk.Tk):
         self._update_display(msg="Ready?")
         for button in self._cells.keys():
             button.config(highlightbackground="lightblue")
+            button.config(background="#f0f0f0")
             button.config(text="")
             button.config(fg="black")
 
