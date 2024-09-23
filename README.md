@@ -28,3 +28,14 @@ The game created follows the conventional Tic-Tac-Toe game rules, which can be r
 ## References
 1. Pozo Ramos, L. & Real Python. (2022, June 27). *Build a Tic-Tac-Toe game with Python and Tkinter*. Retrieved May 20, 2024, from https://realpython.com/tic-tac-toe-python/
 2. *Tic Tac Toe | Exploratorium*. (2023, April 4). Exploratorium. https://www.exploratorium.edu/explore/puzzles/tictactoe
+
+## Contact me
+Thank you so much for visiting my repository! I sincerely hope my project can help you in providing insights to regression analysis, machine learning models, and report writing! :smile:
+If you would like me to explain my project further or contact me for any reason, you can email me below or connect with me on LinkedIn!
+
+<a href="https://www.linkedin.com/in/nathan-lawira/" target="_blank">
+  <img src="https://img.shields.io/badge/-LinkedIn-333333?style=flat&logo=Linkedin" alt="LinkedIn" style="height: 30px;"/>
+</a>
+<a href="mailto:nathanlawira@gmail.com" target="_blank">
+  <img src="https://img.shields.io/badge/-Email-333333?style=flat&logo=Gmail" alt="Email" style="height: 30px;"/>
+</a>
